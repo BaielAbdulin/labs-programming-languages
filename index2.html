@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Возрастная форма</title>
+    <style>
+        .error {
+            color: red;
+        }
+        .anime-image {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Введите ваш возраст</h2>
+
+<form id="ageForm">
+    <label for="ageInput">Возраст:</label>
+    <input type="text" id="ageInput" name="ageInput">
+    <button type="button" onclick="checkAge()">Отправить</button>
+</form>
+
+<p id="message" class="error"></p>
+<img id="animeImage" class="anime-image" src="src/climber.jpeg" alt="Anime Character" width="400">
+
+<!-- Подключение внешнего JS файла -->
+<script src="index2.js"></script>
+
+</body>
+</html>
